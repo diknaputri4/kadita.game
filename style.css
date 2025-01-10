@@ -1,0 +1,154 @@
+/* Reset dasar */
+body,
+h1,
+p,
+h3,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #72767a;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-no {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 15px;
+  color: #72767a;
+  display: flex;
+  align-items: center;
+}
+
+.task-details h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.task-details p {
+  margin: 5px 0;
+}
+
+.task-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.task-details a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #72767a;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.gambar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gambar .task-list {
+  flex: 1;
+}
+
+.gambar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gambar img {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-text img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.video-container {
+  margin-top: 20px;
+}
+
+video {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .gambar {
+    flex-direction: column;
+  }
+
+  .gambar img {
+    width: 80%;
+  }
+
+  main {
+    padding: 10px;
+  }
+}
